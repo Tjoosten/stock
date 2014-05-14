@@ -1,0 +1,1 @@
+/var/www/stock/app/views/partnerships/show.blade.php

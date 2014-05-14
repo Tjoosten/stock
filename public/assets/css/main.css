@@ -1,0 +1,364 @@
+/* ---- Basic Style ---- */
+body {
+    padding-top: 80px;
+}
+
+::selection {color:#ffffff;background:#e54800;}
+::-moz-selection {color:#ffffff;background:#e54800;}
+
+
+
+a:link, a:visited{
+    color: #e54800;
+}
+
+a:hover, a:active{
+    color: #e54800;
+}
+
+/* ---- HELPERS ---- */
+.clickable {
+    cursor: pointer;
+}
+
+.unavailable {
+    text-align: center;
+}
+
+.unavailable span {
+    font-size: 5em;
+    color: rgba(60, 60, 60, 0.80);
+}
+
+#radioGroup input{
+    display: none;
+}
+
+/* ---- NAVIGATION ---- */
+.navbar-brand img{
+    max-height: 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand{
+        padding: 5px 10px;
+    }
+
+    .navbar-brand img{
+        max-height: 40px;
+    }
+}
+
+@media (min-width: 992px){
+    .home .info-box{
+        height: 263px;
+    }
+
+    .info-box{
+        min-height: 204px;
+    }
+}
+
+.navbar-codivex {
+    background: #fff;
+    border-top: 4px solid #e54800;
+    border-bottom: 1px solid #dddddd;
+    color: #888888;
+}
+
+.navbar-toggle {
+    background: #e54800;
+    border-radius: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+.navbar-nav > li > a {
+    color: #888888;
+    text-transform: uppercase;
+}
+
+.navbar-nav > li.active, .navbar-nav >li.active a {
+    background: #e54800;
+    color: #fff;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    color: #fff;
+    background: #e54800;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        margin-bottom: 0;
+        min-height: 75px;
+    }
+
+    .navbar-nav > li > a {
+        position: relative;
+        display: block;
+        padding: 28px 15px;
+    }
+}
+
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+    background-color: #e54800;
+    border-color: #cc6860;
+}
+
+.nav .open a{
+    color: #ffffff;
+}
+
+.nav .open li a{
+    color: #888888;
+}
+
+.dropdown-menu{
+    border-radius: 0;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e54800;
+}
+/* ---- Pagination ---- */
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #e54800;
+    border-color: #e54800;
+    cursor: default;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+    color: #e54800;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination>li>a, .pagination>li>span {
+    color: #777C80;
+}
+
+/* ---- Jumbotron ---- */
+.jumbotron {
+    margin: 0;
+    height: 200px;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+    background: url(../img/header_1.jpg) top center no-repeat;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    .jumbotron-big{
+        height: 800px;
+        background: url(../img/header_big_1.jpg) top center no-repeat;
+    }
+}
+
+.jumbotron h2 {
+    font-size: 48px;
+}
+
+/* ---- Content ---- */
+
+#content {
+    padding: 10px 0 50px 0;
+}
+
+/* ---- Button ---- */
+
+.btn{
+    border-radius: 0;
+}
+
+.btn-codivex {
+    color: #fff;
+    background-color: #e54800;
+    border-color: #5A5E64;
+}
+
+.btn-codivex:hover, .btn-codivex:focus, .btn-codivex:active, .btn-codivex.active, .open .dropdown-toggle.btn-codivex {
+    color: #333;
+    background-color: #fff;
+    border-color: #5A5E64;
+}
+
+.btn-pack {
+    color: #fff;
+    background-color: #393e46;
+    border-color: #5A5E64;
+}
+
+.btn-pack:hover, .btn-pack:focus, .btn-pack:active, .btn-pack.active, .open .dropdown-toggle.btn-pack {
+    color: #fff;
+    background-color: #7a828f;
+    border-color: #5A5E64;
+}
+
+/* ---- Forms ---- */
+
+.form-control, .input-lg{
+    border-radius: 0;
+}
+
+.form-control:focus{
+    border-color: #393e46;
+}
+
+/* ---- Missing Page ---- */
+.missing-page{
+
+}
+
+/* ---- Footer ---- */
+@media (min-width: 768px) and (min-height: 800px){
+    #content{
+        min-height: 460px;
+    }
+}
+
+footer {
+    height: auto;
+    background: #393e46;
+    color: #7a828f;
+    padding: 50px 0;
+}
+
+footer hr {
+    border-top: 1px solid #424750;
+}
+
+/* ---- Alert ---- */
+.alert {
+    border-radius: 0;
+}
+
+/* ---- info-box ---- */
+.info-box{
+    background: #EEE;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 10px 0;
+    box-shadow: 5px 5px 20px #888;
+}
+
+.info-box h3{
+    text-transform: uppercase;
+}
+
+.info-box span{
+    font-size: 50px;
+}
+
+.info-box .sm-glyphicon{
+    font-size: 16px;
+}
+
+.info-box-click:focus, .info-box-click:hover{
+    text-decoration: none;
+}
+
+/* ---- Home How To ---- */
+
+.red{
+    background-color: #e54800 ;
+    padding: 30px;
+    border-radius: 50%;
+}
+.red img{
+    width: 100%;
+    height: 100%;
+
+}
+.line{
+    height: 105px;
+    border-bottom: 10px solid #e54800;
+}
+
+
+/* ---- Timeline ---- */
+
+.containerblog {
+    /*background: #ecf0f1;*/
+    border: 0px solid #ecf0f1;
+    border-radius: 0px;
+    padding-top: 40px;
+}
+
+.blogrol {
+    margin: 0px 0;
+}
+
+.blogrol article {
+    position: relative;
+    top: 10px;
+    left: 0px;
+    padding: 0 0px 40px 40px;
+    border-left: 6px solid #e54800;
+
+}
+.blogrol h3{
+    margin-top: 0px;
+}
+.date{
+    position: absolute;
+    background: #e54800;
+    border-radius: 50%;
+    height: 58px;
+    width: 58px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 60px;
+}
+.date p:first-child{
+    padding-top: 5px;
+}
+
+.blogrol .date {
+    left: -32px;
+    top: -5px;
+}
+
+.blogrol article:last-child {
+    border-left: 0;
+    margin-left: 6px;
+}
+
+.blogrol .articleblock{
+    background-color: #E3E5E6;
+    border: 0px solid black;
+    padding: 10px;
+}
+
+
+.blogrol .corner{
+    position: absolute;
+    left: 31px;
+    height: 20px;
+    width: 20px;
+    top: 14px;
+    z-index: 0;
+}
+
+.arrow-left {
+    position: absolute;
+    top: 14px;
+    left: 31px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:10px solid #E3E5E6;
+}
+.blogrol .clear{
+    clear: both;
+}

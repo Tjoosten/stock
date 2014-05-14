@@ -1,0 +1,1 @@
+/var/www/stock/app/views/categories/create.blade.php

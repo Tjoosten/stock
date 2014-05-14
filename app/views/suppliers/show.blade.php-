@@ -1,0 +1,40 @@
+@extends('layouts.master')
+
+@section('content')
+    <h1>Leverancier Informatie: {{ $supplier->name }}</h1>
+
+    <ol class="breadcrumb">
+        <li>
+            {{ link_to_action('DashboardController@index', 'Dashboard') }}
+        </li>
+        <li>
+            {{ link_to_action('SuppliersController@index', 'Leveranciers') }}
+        </li>
+        <li class="active">{{ $supplier->name }}</li>
+    </ol>
+
+    <div class="row">
+        {{ HTML::link_box(
+            "col-md-3",
+            "ProductsController@create",
+            "glyphicon-plus",
+            "Product toevoegen",
+            "Product van het gamma toevoegen",
+            [1])
+        }}
+    </div>
+
+    <h2>Producten</h2>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Art.</th>
+                <th>Productgroep</th>
+                <th>Type</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+@stop

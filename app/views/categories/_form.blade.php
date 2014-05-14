@@ -1,0 +1,2 @@
+{{ Form::bt_text('name', null, null, array('class' => 'input-lg', 'placeholder' => 'Category naam', 'tabindex' => '1')) }}
+{{ Form::bt_button((Request::is('*/create') or Request::is('*/categories')) ? 'Toevoegen' : 'Wijzigen', array('class' => 'btn-pack btn-block btn-lg', 'tabindex' => '4')) }}

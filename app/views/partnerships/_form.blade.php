@@ -1,0 +1,2 @@
+{{ Form::bt_text('name', null, null, array('class' => 'input-lg', 'placeholder' => 'Venootschap naam', 'tabindex' => '1')) }}
+{{ Form::bt_button('Toevoegen', array('class' => 'btn-pack btn-block btn-lg', 'tabindex' => '2')) }}
