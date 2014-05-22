@@ -24,6 +24,5 @@ class ExportsController extends \BaseController {
             ->with('data', $data)
             ->setTitle('Historiek')
             ->export('xls');
-        //return View::make('exports.historyExport', compact('data'));
     }
 }

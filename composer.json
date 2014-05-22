@@ -6,7 +6,7 @@
 	"require": {
 		"laravel/framework": "4.1.*",
         "felixkiss/uniquewith-validator": "dev-master",
-        "maatwebsite/excel": "dev-master",
+        "maatwebsite/excel": "v0.3.4",
 		"dsdevbe/ldap-connector": "1.*"
 	},
     "require-dev": {

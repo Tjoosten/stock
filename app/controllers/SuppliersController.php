@@ -111,7 +111,7 @@ class SuppliersController extends \BaseController {
             if($confirm == "DELETE")
             {
                 $supplier->delete();
-                return Redirect::action('SuppliersController@index')->withSuccess('Leverancier succesvol verwijdert.');
+                return Redirect::action('SuppliersController@index')->withSuccess('Leverancier succesvol verwijderd.');
             }
 
             return Redirect::action('SuppliersController@index')->withErrors('Bevestiging is niet compleet! Het invulveld komt niet overeen.');
