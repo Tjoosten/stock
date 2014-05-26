@@ -5,7 +5,7 @@
             <dt>Bedrijf</dt>
             <dd>{{ $customer->name }}</dd>
 
-            <dt>Address</dt>
+            <dt>Adres</dt>
             <dd>{{ $customer->address }}</dd>
 
             <dt>Beschrijving</dt>

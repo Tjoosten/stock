@@ -18,7 +18,7 @@
     <dt>Bedrijf</dt>
     <dd>{{ $customer->name }}</dd>
 
-    <dt>Address</dt>
+    <dt>Adres</dt>
     <dd>{{ $customer->address }}</dd>
 
     <dt>Beschrijving</dt>
@@ -136,6 +136,9 @@
                 {{ Form::radio('status', '1') }} Checkin
             </label>
             <label class="btn btn-codivex">
+                {{ Form::radio('status', '3') }} Checkin herstelling
+            </label>
+            <label class="btn btn-codivex">
                 {{ Form::radio('status', '2') }} Checkout klant
             </label>
             <label class="btn btn-codivex">
@@ -143,9 +146,6 @@
             </label>
             <label class="btn btn-codivex">
                 {{ Form::radio('status', '7') }} Forward
-            </label>
-            <label class="btn btn-codivex">
-                {{ Form::radio('status', '3') }} Herstelling
             </label>
             <label class="btn btn-codivex">
                 {{ Form::radio('status', '6') }} Opmerking

@@ -49,7 +49,7 @@ class PartnershipsController extends \BaseController {
         {
             return Redirect::back()->withInput()->withErrors($e->getErrors());
         }
-        return Redirect::action('PartnershipsController@index')->withSuccess('Venootschap succesvol toegevoegd.');
+        return Redirect::action('PartnershipsController@index')->withSuccess('Vennootschap succesvol toegevoegd.');
 	}
 
 	/**
@@ -93,7 +93,7 @@ class PartnershipsController extends \BaseController {
         {
             return Redirect::back()->withInput()->withErrors($e->getErrors());
         }
-        return Redirect::action('PartnershipsController@index')->withSuccess('Venootschap succesvol gewijzigd.');
+        return Redirect::action('PartnershipsController@index')->withSuccess('Vennootschap succesvol gewijzigd.');
 	}
 
 	/**
@@ -109,7 +109,7 @@ class PartnershipsController extends \BaseController {
         if($partnership->customers->count() <= 0)
         {
             $partnership->delete();
-            return Redirect::action('PartnershipsController@index')->withSuccess('Venootschap is succesvol verwijdert uit het systeem.');
+            return Redirect::action('PartnershipsController@index')->withSuccess('Vennootschap is succesvol verwijdert uit het systeem.');
         }
 
         return Redirect::action('PartnershipsController@index')->withErrors('Fout opgetreden bij het verwijderen.');

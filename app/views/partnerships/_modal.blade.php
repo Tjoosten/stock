@@ -8,12 +8,12 @@
             </div>
             <div class="modal-body">
                 <p>
-                    Het venootschap {{ $partnership->name }} wordt verwijdert uit het systeem.
+                    Het vennootschap {{ $partnership->name }} wordt verwijdert uit het systeem.
                 </p>
             </div>
             <div class="clearfix"></div>
             <div class="modal-footer">
-                {{ Form::bt_button('Verwijder Venootschap', array('class' => 'btn-danger btn-block')) }}
+                {{ Form::bt_button('Verwijder Vennootschap', array('class' => 'btn-danger btn-block')) }}
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

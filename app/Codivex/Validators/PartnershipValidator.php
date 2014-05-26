@@ -11,6 +11,6 @@ class PartnershipValidator extends Validator{
     ];
 
     protected static $messages = [
-        'name.required'     =>  'Naam van venootschap is een verplicht veld'
+        'name.required'     =>  'Naam van vennootschap is een verplicht veld'
     ];
 } 

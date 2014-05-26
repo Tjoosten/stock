@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
 @section('content')
-<h1>Venootschappen</h1>
+<h1>Vennootschappen</h1>
 <ol class="breadcrumb">
     <li>
         {{ link_to_action('DashboardController@index', 'Dashboard') }}
     </li>
-    <li class="active">Venootschappen</li>
+    <li class="active">Vennootschappen</li>
 </ol>
 
 <div class="row">
@@ -14,7 +14,7 @@
         @if($partnerships->first())
         <table class="table table-hover">
             <thead>
-                <th>Venootschap</th>
+                <th>Vennootschap</th>
                 <th></th>
                 <th></th>
             </thead>
@@ -36,7 +36,7 @@
             </tbody>
         </table>
         @else
-            {{ HTML::unavailable('Er is nog geen venootschap aangemaakt.') }}
+            {{ HTML::unavailable('Er is nog geen vennootschap aangemaakt.') }}
         @endif
     </div>
     <div class="col-md-6">

@@ -15,7 +15,7 @@
     {{-- Country Management --}}
     {{ HTML::link_box('col-md-3', 'CountriesController@index', "glyphicon-plane", "Beheer Landen", "Als men een land wilt toevoegen") }}
     {{-- Partnership Management --}}
-    {{ HTML::link_box('col-md-3', 'PartnershipsController@index', "glyphicon-flag", "Beheer Venootschappen", "toevoegen van venootschap") }}
+    {{ HTML::link_box('col-md-3', 'PartnershipsController@index', "glyphicon-flag", "Beheer Vennootschappen", "toevoegen van vennootschap") }}
 </div>
 <div class="clearfix"></div>
 <hr/>

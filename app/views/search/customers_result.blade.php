@@ -20,7 +20,7 @@
     <thead>
     <tr>
         <th>Naam</th>
-        <th>Address</th>
+        <th>Adres</th>
         <th>Postcode</th>
         <th>Stad</th>
         <th>Land</th>

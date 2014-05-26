@@ -24,8 +24,8 @@ Route::group(['before' => 'force.ssl'], function(){
 
 // Country
     Route::resource('land', 'CountriesController', ['except' => ['show']]);
-// Partnerships / venootschappen
-    Route::resource('venootschap', 'PartnershipsController', ['except' => ['show', 'create']]);
+// Partnerships / vennootschappen
+    Route::resource('vennootschap', 'PartnershipsController', ['except' => ['show', 'create']]);
 
 // Search
     Route::get('search', 'SearchController@index');

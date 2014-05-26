@@ -1,13 +1,13 @@
 @extends('layouts.master')
 
 @section('content')
-<h1>Venootschap</h1>
+<h1>Vennootschap</h1>
 <ol class="breadcrumb">
     <li>
         {{ link_to_action('DashboardController@index', 'Dashboard') }}
     </li>
     <li>
-        {{ link_to_action('PartnershipsController@index', 'Venootschap') }}
+        {{ link_to_action('PartnershipsController@index', 'Vennootschap') }}
     </li>
     <li class="active">Edit</li>
 </ol>

@@ -4,14 +4,14 @@
         {{ Form::bt_text('name', null, null, array('class' => 'input-lg', 'placeholder' => 'Klant naam', 'tabindex' => '1')) }}
     </div>
     <div class="col-md-2">
-        {{ Form::select('partnership_id', ['default' => 'Venootschap'] + $partnerships, null, array('class' => 'form-control input-lg', 'tabindex' => '2')) }}
+        {{ Form::select('partnership_id', ['default' => 'Vennootschap'] + $partnerships, null, array('class' => 'form-control input-lg', 'tabindex' => '2')) }}
     </div>
     <div class="col-md-2">
         {{ Form::bt_text('customerNumber', null, null, array('class' => 'input-lg', 'placeholder' => 'Klant nummer', 'tabindex' => '3')) }}
     </div>
 </div>
 
-<h2>Address Gegevens</h2>
+<h2>Adres Gegevens</h2>
 <div class="row">
     <div class="col-md-8">
         {{ Form::bt_text('address', null, null, array('class' => 'input-lg', 'placeholder' => 'Straat', 'tabindex' => '4')) }}

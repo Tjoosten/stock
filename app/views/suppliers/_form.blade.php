@@ -1,5 +1,5 @@
 {{ Form::bt_text('name', null, null, array('class' => 'input-lg', 'placeholder' => 'Leveranciers naam', 'tabindex' => '1')) }}
-{{ Form::bt_text('address', null, null, array('class' => 'input-lg', 'placeholder' => 'Address', 'tabindex' => '2')) }}
+{{ Form::bt_text('address', null, null, array('class' => 'input-lg', 'placeholder' => 'Adres', 'tabindex' => '2')) }}
 <div class="row">
     <div class="col-xs-12 col-md-6">
         {{ Form::bt_text('city', null, null, array('class' => 'input-lg', 'placeholder' => 'City', 'tabindex' => '3')) }}

@@ -14,7 +14,7 @@
                     <dt>Leverancier</dt>
                     <dd>{{ $customer->name }}</dd>
 
-                    <dt>Address</dt>
+                    <dt>Adres</dt>
                     <dd>{{ $customer->address }}</dd>
 
                     <dt></dt>
