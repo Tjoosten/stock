@@ -17,7 +17,7 @@ class Category extends \Eloquent {
     {
         $search = Static::with('supplier')->find($id);
 
-        if($supplier_id and $search->supplier->id !== $supplier_id)
+        if($supplier_id and $search->supplier->id != $supplier_id)
         {
             throw new Illuminate\Database\Eloquent\ModelNotFoundException;
         }

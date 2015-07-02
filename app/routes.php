@@ -1,5 +1,5 @@
 <?php
-Route::group(['before' => 'force.ssl'], function(){
+Route::group(['before' => ''], function(){
 //HomeRoute
     Route::get('/', 'HomeController@index');
     Route::get('dashboard', 'DashboardController@index');

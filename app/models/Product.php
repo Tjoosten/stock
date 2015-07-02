@@ -22,8 +22,8 @@ class Product extends \Eloquent {
     public static function find($id, $supplier_id = null)
     {
         $search = Static::with('supplier')->find($id);
-
-        if($supplier_id and $search->supplier->id !== $supplier_id)
+	
+	if($supplier_id and $search->supplier->id != $supplier_id)
         {
             throw new Illuminate\Database\Eloquent\ModelNotFoundException;
         }

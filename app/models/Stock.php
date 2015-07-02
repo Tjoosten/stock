@@ -27,7 +27,7 @@ class Stock extends \Eloquent {
     {
         $search = Static::with('product.supplier', 'product.category', 'customer', 'registrations')->find($id);
 
-        if($customer_id and $search->customer->id !== $customer_id)
+        if($customer_id and $search->customer->id != $customer_id)
         {
             throw new Illuminate\Database\Eloquent\ModelNotFoundException;
         }

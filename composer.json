@@ -4,15 +4,11 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.1.*",
-        "felixkiss/uniquewith-validator": "dev-master",
-        "maatwebsite/excel": "v0.3.4",
-		"dsdevbe/ldap-connector": "1.*"
+		"laravel/framework": "4.2.*",
+        	"felixkiss/uniquewith-validator": "1.1.1",
+		"itsgoingd/clockwork": "^1.7"
 	},
     "require-dev": {
-        "fzaninotto/faker": "dev-master",
-        "itsgoingd/clockwork": "1.*",
-        "way/generators": "dev-master"
     },
 	"autoload": {
 		"classmap": [

@@ -107,12 +107,12 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
-        'Way\Generators\GeneratorsServiceProvider',
+//        'Way\Generators\GeneratorsServiceProvider',
         'Codivex\Generator\GenerateServiceProvider',
         'Clockwork\Support\Laravel\ClockworkServiceProvider',
         'Felixkiss\UniqueWithValidator\UniqueWithValidatorServiceProvider',
-        'Maatwebsite\Excel\ExcelServiceProvider',
-        'Dsdevbe\LdapConnector\LdapConnectorServiceProvider'
+//        'Maatwebsite\Excel\ExcelServiceProvider',
+//	  'Dsdevbe\LdapConnector\LdapConnectorServiceProvider'
 	),
 
 	/*
@@ -180,8 +180,8 @@ return array(
 		'View'            => 'Illuminate\Support\Facades\View',
 
         'Generate'        => 'Codivex\Generator\GenerateService',
-        'Clockwork'       => 'Clockwork\Support\Laravel\Facade',
-        'Excel'           => 'Maatwebsite\Excel\Facades\Excel',
+        //'Clockwork'       => 'Clockwork\Support\Laravel\Facade',
+        //'Excel'           => 'Maatwebsite\Excel\Facades\Excel',
 	),
 
 );
