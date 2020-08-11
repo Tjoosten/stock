@@ -11,18 +11,6 @@ class CustomersController extends \BaseController {
         $this->customerCreator = $customerCreator;
     }
 
-    
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-        $countries = Country::lists('name', 'id');
-        $partnerships = Partnership::lists('name', 'id');
-        return View::make('customers.create', compact('countries', 'partnerships'));
-	}
 
 	/**
 	 * Store a newly created resource in storage.
