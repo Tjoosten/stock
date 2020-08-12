@@ -12,16 +12,7 @@ class CountriesController extends \BaseController {
         $this->countryCreator = $countryCreator;
     }
 
-    /**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-        $countries = Country::with('suppliers', 'customers')->get();
-		return View::make('countries.index', compact('countries'));
-	}
+
 
 	/**
 	 * Show the form for creating a new resource.
