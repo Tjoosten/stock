@@ -43,34 +43,7 @@
             @endforeach
             </tbody>
         </table>
-        @else
-        {{ HTML::unavailable('Er is nog geen land aangemaakt.') }}
         @endif
     </div>
-    <div class="col-md-6">
-        {{ Form::open(array('role' => 'form', 'action' => 'CountriesController@store')) }}
-            @include('countries._dropdown')
-            {{ Form::bt_button('Toevoegen', array('class' => 'btn-pack btn-block btn-lg', 'tabindex' => '2')) }}
-            {{ Form::hidden('name', null, ['id' => 'countryName']) }}
-        {{ Form::close() }}
-    </div>
 </div>
-@stop
-
-@section('scripts')
-    <script>
-        (function(){
-            updateHidden();
-
-            $('#country_code').change(function(){
-                updateHidden();
-            });
-
-            function updateHidden()
-            {
-                $('#countryName').val($('#country_code option:selected').text());
-                console.log($('#countryName').text());
-            }
-        })();
-    </script>
 @stop
